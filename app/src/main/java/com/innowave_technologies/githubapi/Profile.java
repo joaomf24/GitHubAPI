@@ -1,9 +1,5 @@
 package com.innowave_technologies.githubapi;
 
-/**
- * Created by João MF on 11/05/2018.
- */
-
 public class Profile {
 
     private String mUserName;

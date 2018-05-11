@@ -85,24 +85,24 @@ public class DetailsActivity extends AppCompatActivity {
             @Override
             public void onGitHubTaskFinished(String data) {
 
-                if(!data.equals("") && !data.equals("[]")) {
+            if(!data.equals("") && !data.equals("[]")) {
 
-                        try {
-                            JSONArray jsonArray = new JSONArray(data);
-                            int length = jsonArray.length();
-                            for (int i = 0; i<length; i++) {
-                                JSONObject jsonObj = (JSONObject) jsonArray.get(i);
-                                mFollowerItems.add(new FollowerItem(DetailsActivity.this, jsonObj.getString("login"), jsonObj.getString("avatar_url")));
-                            }
+                try {
+                    JSONArray jsonArray = new JSONArray(data);
+                    int length = jsonArray.length();
+                    for (int i = 0; i<length; i++) {
+                        JSONObject jsonObj = (JSONObject) jsonArray.get(i);
+                        mFollowerItems.add(new FollowerItem(DetailsActivity.this, jsonObj.getString("login"), jsonObj.getString("avatar_url")));
+                    }
 
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-
-                    FollowersListAdapter adapter = new FollowersListAdapter(DetailsActivity.this, mFollowerItems);
-                    followersList.setAdapter(adapter);
-
+                } catch (JSONException e) {
+                    e.printStackTrace();
                 }
+
+                FollowersListAdapter adapter = new FollowersListAdapter(DetailsActivity.this, mFollowerItems);
+                followersList.setAdapter(adapter);
+
+            }
             }
         });
 

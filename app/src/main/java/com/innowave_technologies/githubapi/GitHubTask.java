@@ -6,10 +6,6 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-/**
- * Created by João MF on 11/05/2018.
- */
-
 public class GitHubTask extends AsyncTask<String, Void, String> {
 
     private OnGitHubTaskListener mOnGitHubTaskListener;
@@ -26,7 +22,7 @@ public class GitHubTask extends AsyncTask<String, Void, String> {
             BufferedReader in = new BufferedReader(new InputStreamReader(httpcon.getInputStream()));
 
             String line;
-            while ( ( line = in.readLine() ) != null) {
+            while ((line = in.readLine()) != null) {
                 response.append(line);
             }
             in.close();

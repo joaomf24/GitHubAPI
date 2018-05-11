@@ -9,7 +9,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.SearchView;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 
