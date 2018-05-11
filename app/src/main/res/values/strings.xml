@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">GitHubAPI</string>
+    <string name="search">Search user on GitHub</string>
+    <string name="followers">Followers</string>
+</resources>
