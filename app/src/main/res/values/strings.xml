@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">GitHubAPI</string>
     <string name="search">Search user on GitHub</string>
+    <string name="login">Log In</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
     <string name="followers">Followers</string>
 </resources>
