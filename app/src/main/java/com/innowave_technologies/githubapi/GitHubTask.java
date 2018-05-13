@@ -35,7 +35,7 @@ public class GitHubTask extends AsyncTask<String, Void, String> {
                 httpcon.addRequestProperty("User-Agent", "Mozilla/5.0");
             BufferedReader in = new BufferedReader(new InputStreamReader(httpcon.getInputStream()));
             String line;
-            
+
             while ((line = in.readLine()) != null) {
                 response.append(line);
             }
